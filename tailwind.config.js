@@ -6,10 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Helvetica', 'sans-serif'],
+    },
     extend: {
       fontFamily: {
         burtons: "burtons",
-        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
