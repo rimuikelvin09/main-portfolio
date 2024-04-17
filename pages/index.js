@@ -93,11 +93,11 @@ export default function Home() {
 
 
         {/** Services Section */}
-        <section >
-          <div className="px-20">
+        <section className="px-20" >
+          <div >
             <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Our Services</h3>
             <p className="text-md py-2 leading-8  text-gray-800 dark:text-gray-200  mx-auto md:text-xl">
-              Since the beginning of Our journey we've worked with
+              Since the beginning of our journey we've worked with
               <span className="text-sky-600"> Financial Institutions</span>,
               <span className="text-sky-600"> Government Agencies</span>,
               <span className="text-sky-600"> Associations</span>,
@@ -109,54 +109,53 @@ export default function Home() {
 
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-left shadow-xl hover:shadow-2xl p-10 rounded-xl my-10  dark:bg-slate-200 flex-1">
               <Image src={design} alt="" width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+              <h3 className="text-lg font-medium pt-8 pb-2 text-slate-600 ">
+                Web Development
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Experience the seamless fusion of innovation and functionality with our expertly crafted web solutions, where every line of code tells a story of mastery.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 font-bold text-sky-600">Our Tech Stack</h4>
+              <li className="text-gray-800 py-1">JavaScript & TypeScript</li>
+              <li className="text-gray-800 py-1">TailwindCSS</li>
+              <li className="text-gray-800 py-1">Svelte</li>
+              <li className="text-gray-800 py-1">Wordpress</li>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-left shadow-xl hover:shadow-2xl p-10 rounded-xl my-10  dark:bg-slate-200 flex-1">
               <Image src={code} alt="" width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+              <h3 className="text-lg font-medium pt-8 pb-2 text-slate-600 ">
+                Digital Marketing
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                Elevate your digital presence with our strategic prowess, turning clicks into conversions and engagement into lasting relationships.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 font-bold text-sky-600">Our Forte</h4>
+              <li className="text-gray-800 py-1">Digital Marketing Strategy</li>
+              <li className="text-gray-800 py-1">Social Media Management</li>
+              <li className="text-gray-800 py-1">Graphic Design</li>
+              <li className="text-gray-800 py-1">Photography & Videography</li>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-left shadow-xl hover:shadow-2xl p-10 rounded-xl my-10  dark:bg-slate-200 flex-1">
               <Image src={consulting} alt="" width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-slate-600 ">
+                Software Solutions
+              </h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Experience the pinnacle of software development expertise and bespoke solutions, to propel your business forward with precision.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 font-bold text-sky-600">Our Solutions</h4>
+              <li className="text-gray-800 py-1">Software Development</li>
+              <li className="text-gray-800 py-1">Mobile App development</li>
+              <li className="text-gray-800 py-1">ERP systems</li>
+              <li className="text-gray-800 py-1">CRM systems</li>
             </div>
           </div>
         </section>
 
         {/**Portfolio section */}
-        <section className="py-10">
+        <section className="py-10 px-20">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
