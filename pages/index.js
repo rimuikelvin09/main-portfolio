@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.jpg";
+import profile from "../public/profile-picture.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -56,8 +56,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-slate-700 font-extrabold dark:text-slate-800 md:text-6xl">
+          <div className="text-center p-10 py-10 drop-shadow-md">
+            <h2 className="text-5xl py-2 text-slate-700 font-extrabold dark:text-white md:text-6xl">
               Kelvin
               <span className="text-sky-500">Rimui</span>
 
@@ -65,19 +65,27 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               IT Consultant.
             </h3>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} alt="" layout="fill" objectFit="cover" />
+            <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 drop-shadow-md hover:drop-shadow-xl">
+              <Image src={profile} alt="" layout="fill" objectFit="cover" />
             </div>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              My company specializes in seamlessly integrating business operations with cutting-edge IT solutions.
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
+              My team specializes in seamlessly integrating business operations with cutting-edge IT solutions.
               With a focus on websites, CRM systems, hardware implementation, and a diverse background spanning various industries,
               we are your trusted partner in optimizing your technological infrastructure for maximum efficiency and growth.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillFacebook />
-              <AiFillGithub />
+              <a href="https://twitter.com/rimui09">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100057993361993">
+                <AiFillFacebook />
+              </a>
+              <a href="https://github.com/rimuikelvin09">
+                <AiFillGithub />
+              </a>
             </div>
 
           </div>
@@ -85,21 +93,20 @@ export default function Home() {
 
 
         {/** Services Section */}
-        <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
+        <section >
+          <div className="px-20">
+            <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Our Services</h3>
+            <p className="text-md py-2 leading-8  text-gray-800 dark:text-gray-200  mx-auto md:text-xl">
+              Since the beginning of Our journey we've worked with
+              <span className="text-sky-600"> Financial Institutions</span>,
+              <span className="text-sky-600"> Government Agencies</span>,
+              <span className="text-sky-600"> Associations</span>,
+              <span className="text-sky-600"> Corporates</span> &
+              <span className="text-sky-600"> SME's </span>.
+              We've also collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
+
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
@@ -240,10 +247,18 @@ export default function Home() {
             </ul>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillFacebook />
-            <AiFillGithub />
+            <a href="https://twitter.com/rimui09">
+              <AiFillTwitterCircle />
+            </a>
+            <a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100057993361993">
+              <AiFillFacebook />
+            </a>
+            <a href="https://github.com/rimuikelvin09">
+              <AiFillGithub />
+            </a>
           </div>
         </section>
 
