@@ -124,8 +124,8 @@ export default function Home() {
                 expertly crafted web solutions, where every line of code tells a story of mastery.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Tech Stack</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-200">
-                <li className="text-gray-800 py-1">JavaScript & TypeScript</li>
+              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
+                <li className=" py-1">JavaScript & TypeScript</li>
                 <li className="py-1">TailwindCSS</li>
                 <li className=" py-1">Svelte</li>
                 <li className="py-1">Wordpress</li>
@@ -142,7 +142,7 @@ export default function Home() {
                 clicks into conversions and engagement into lasting relationships.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Forte</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-200">
+              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
                 <li className="py-1">Digital Marketing Strategy</li>
                 <li className="py-1">Social Media Management</li>
                 <li className="py-1">Graphic Design</li>
@@ -159,7 +159,7 @@ export default function Home() {
                 bespoke solutions, to propel your business forward with precision.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Solutions</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-200">
+              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
                 <li className="py-1">Software Development</li>
                 <li className="py-1">Mobile App development</li>
                 <li className="py-1">ERP systems</li>
@@ -183,7 +183,7 @@ export default function Home() {
 
           {/**Logos */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 m-4 md:m-6 pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0 md:gap-0 m-4 md:m-6 pt-6">
             <div className="size-40">
               <a href="https://www.bbsltd.co.ke" target="_blank" rel="noopener noreferrer">
                 <Image
