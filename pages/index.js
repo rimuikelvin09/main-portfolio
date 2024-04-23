@@ -24,6 +24,8 @@ import ape from "../public/drunkenape.png";
 import sb4u from "../public/SB4U-LOGO-1.png";
 import compact from "../public/compact.png";
 import bbs from "../public/Benchmark.png";
+import alphalogo from "../public/alpha1a.png";
+
 
 
 export default function Home() {
@@ -42,7 +44,14 @@ export default function Home() {
 
         <section className="min-h-screen">
           <nav className="py-4 md:py-6 lg:py-10 mb-4 md:mb-6 lg:mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-lg md:text-xl lg:text-2xl">AlphaTech Insights</h1>
+            <div className="h-6 w-10 md:w-20 md:h-8 lg:h-10">
+              <Image
+                className="h-full w-auto contrast-50"
+                layout="responsive"
+                src={alphalogo}
+                alt="AlphaTech Insights Logo"
+              />
+            </div>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
