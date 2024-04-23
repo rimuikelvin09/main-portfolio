@@ -13,13 +13,17 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import web7 from "../public/web7.png";
+import web2 from "../public/ecommerce.png";
+import web3 from "../public/websites.png";
+import web4 from "../public/Youtube.png";
+import web5 from "../public/Graphic.png";
+import web7 from "../public/Fintech.png";
+import unity from "../public/K-unity.png";
+import orion from "../public/orion.png";
+import ape from "../public/drunkenape.png";
+import sb4u from "../public/SB4U-LOGO-1.png";
+import compact from "../public/compact.png";
+import bbs from "../public/Benchmark.png";
 
 
 export default function Home() {
@@ -115,7 +119,8 @@ export default function Home() {
                 Web Development
               </h3>
               <p className="py-2">
-                Experience the seamless fusion of innovation and functionality with our expertly crafted web solutions, where every line of code tells a story of mastery.
+                Experience the seamless fusion of innovation and functionality with our
+                expertly crafted web solutions, where every line of code tells a story of mastery.
               </p>
               <h4 className="py-4 font-bold text-sky-600">Our Tech Stack</h4>
               <li className="text-gray-800 py-1">JavaScript & TypeScript</li>
@@ -129,7 +134,8 @@ export default function Home() {
                 Digital Marketing
               </h3>
               <p className="py-2">
-                Elevate your digital presence with our strategic prowess, turning clicks into conversions and engagement into lasting relationships.
+                Elevate your digital presence with our strategic prowess, turning
+                clicks into conversions and engagement into lasting relationships.
               </p>
               <h4 className="py-4 font-bold text-sky-600">Our Forte</h4>
               <li className="text-gray-800 py-1">Digital Marketing Strategy</li>
@@ -143,7 +149,8 @@ export default function Home() {
                 Software Solutions
               </h3>
               <p className="py-2">
-                Experience the pinnacle of software development expertise and bespoke solutions, to propel your business forward with precision.
+                Experience the pinnacle of software development expertise and
+                bespoke solutions, to propel your business forward with precision.
               </p>
               <h4 className="py-4 font-bold text-sky-600">Our Solutions</h4>
               <li className="text-gray-800 py-1">Software Development</li>
@@ -157,22 +164,84 @@ export default function Home() {
         {/**Portfolio section */}
         <section className="py-10 px-20">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Portofolio</h3>
+            <p className="text-md py-2 leading-8  text-gray-800 dark:text-gray-200  mx-auto md:text-xl">
+              In every project, we dedicate ourselves wholeheartedly,
+              harnessing our<span className="text-sky-600"> collective expertise and passion</span> to deliver exceptional
+              solutions that redefine standards and exceed expectations,
+              setting new benchmarks for excellence in every endeavor.
             </p>
           </div>
+
+          {/**Logos */}
+
+          <div className="grid grid-cols-6 gap-6 m-6 pt-6">
+            <div className="size-40">
+              <a href="https://www.bbsltd.co.ke" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={bbs}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-40">
+              <a href="https://www.k-unity.co.ke/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={unity}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-40">
+              <a href="https://www.drunkenape.africa/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={ape}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-40">
+              <a href="https://sb4uplatform.com/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={sb4u}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-40">
+              <a href="https://shop.compacthydro.co.ke/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={compact}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-36">
+              <a href="https://orionfastcash.co.ke/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={orion}
+                  alt=""
+                />
+              </a>
+            </div>
+
+          </div>
+
+          {/**Showcase images */}
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1 shadow-xl hover:shadow-2xl">
               <a href="https://www.bbsltd.co.ke" target="_blank" rel="noopener noreferrer">
                 <Image
                   className="rounded-lg object-cover"
@@ -184,7 +253,7 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl hover:shadow-2xl">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -194,7 +263,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl hover:shadow-2xl">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -204,7 +273,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl hover:shadow-2xl">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -214,7 +283,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl hover:shadow-2xl">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -224,13 +293,15 @@ export default function Home() {
                 alt=""
               />
             </div>
+
+            {/**Empty image container */}
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web6}
+                src={""}
                 alt=""
               />
             </div>
