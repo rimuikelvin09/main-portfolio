@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="description" content="Kelvin Rimui's personal portfolio" />
         <link rel="icon" href="/alpha-logo.ico" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="scroll-smooth bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
 
         {/**Header section */}
 
@@ -51,6 +51,28 @@ export default function Home() {
                 src={alphalogo}
                 alt="AlphaTech Insights Logo"
               />
+            </div>
+            <div className="flex items-center">
+              <div class="px-5 py-2">
+                <a href="#about" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  About
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#services" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Services
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#portfolio" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Portfolio
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#contact" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contact
+                </a>
+              </div>
             </div>
             <ul className="flex items-center">
               <li>
@@ -69,7 +91,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-4 md:p-6 py-6 md:py-10 drop-shadow-md">
+          <div id="about" className="text-center p-4 md:p-6 py-6 md:py-10 drop-shadow-md">
             <h2 className="text-3xl md:text-5xl py-2 text-slate-700 font-extrabold dark:text-white">
               Kelvin
               <span className="text-sky-500">Rimui</span>
@@ -80,7 +102,7 @@ export default function Home() {
             <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-48 md:w-80 h-48 md:h-80 relative overflow-hidden mt-10 md:mt-20 lg:mt-24">
               <Image src={profile} alt="" layout="fill" objectFit="cover" />
             </div>
-            <p className="text-md md:text-md py-3 md:py-5 leading-7 md:leading-8 text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto">
+            <p className=" text-md md:text-md py-3 md:py-5 leading-7 md:leading-8 text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto">
               My team specializes in seamlessly integrating business operations with cutting-edge IT solutions.
               With a focus on websites, CRM systems, hardware implementation, and a diverse background spanning various industries,
               we are your trusted partner in optimizing your technological infrastructure for maximum efficiency and growth.
@@ -106,7 +128,7 @@ export default function Home() {
 
 
         {/** Services Section */}
-        <section className="px-4 md:px-6 lg:px-20" >
+        <section id="services" className="px-4 md:px-6 lg:px-20" >
           <div >
             <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Our Services</h3>
             <p className="text-md py-2 leading-8  text-gray-800 dark:text-gray-200  mx-auto md:text-l">
@@ -132,12 +154,12 @@ export default function Home() {
                 Experience the seamless fusion of innovation and functionality with our
                 expertly crafted web solutions, where every line of code tells a story of mastery.
               </p>
-              <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Tech Stack</h4>
+              <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Solutions</h4>
               <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
-                <li className=" py-1">JavaScript & TypeScript</li>
-                <li className="py-1">TailwindCSS</li>
-                <li className=" py-1">Svelte</li>
-                <li className="py-1">Wordpress</li>
+                <li className=" py-1">E-Commerce</li>
+                <li className="py-1">Portfolio's</li>
+                <li className=" py-1">Corporate websites</li>
+                <li className="py-1">Blog websites</li>
               </ul>
 
             </div>
@@ -171,17 +193,17 @@ export default function Home() {
               <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
                 <li className="py-1">Software Development</li>
                 <li className="py-1">Mobile App development</li>
-                <li className="py-1">ERP systems</li>
-                <li className="py-1">CRM systems</li>
+                <li className="py-1">ERP & CRM systems</li>
+                <li className="py-1">Fintech solutions</li>
               </ul>
             </div>
           </div>
         </section>
 
         {/**Portfolio section */}
-        <section className="mt-10 px-4 md:px-6 lg:px-20">
+        <section id="portfolio" className="mt-10 px-4 md:px-6 lg:px-20">
           <div>
-            <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Portofolio</h3>
+            <h3 className="text-3xl py-1 text-slate-700 dark:text-white font-bold">Our Portofolio</h3>
             <p className="text-md py-2 leading-8  text-gray-800 dark:text-gray-200  mx-auto md:text-l">
               In every project, we dedicate ourselves wholeheartedly,
               harnessing our<span className="text-sky-600"> collective expertise and passion</span> to deliver exceptional
@@ -326,29 +348,50 @@ export default function Home() {
         </section>
 
         {/**Footer section */}
+
         <section className="py-10 text-1xl flex justify-center gap-16  text-gray-600 dark:text-gray-400">
-          <div className="contact-details">
-            <ul>
-              <li>email: info@alphainsights.co.ke</li>
-              <li>Phone: +254 722 288 446</li>
-            </ul>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <a href="https://twitter.com/rimui09">
-              <AiFillTwitterCircle />
-            </a>
-            <a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/">
-              <AiFillLinkedin />
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100057993361993">
-              <AiFillFacebook />
-            </a>
-            <a href="https://github.com/rimuikelvin09">
-              <AiFillGithub />
-            </a>
+          <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+            <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+              <div class="px-5 py-2">
+                <a href="#about" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  About
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#services" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Services
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#portfolio" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Portfolio
+                </a>
+              </div>
+              <div class="px-5 py-2">
+                <a href="#contact" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contact
+                </a>
+              </div>
+            </nav>
+            <div className="text-3xl md:text-5xl flex justify-center gap-8 md:gap-16 py-2 md:py-3 text-gray-600 dark:text-gray-400">
+              <a href="https://twitter.com/rimui09">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100057993361993">
+                <AiFillFacebook />
+              </a>
+              <a href="https://github.com/rimuikelvin09">
+                <AiFillGithub />
+              </a>
+            </div>
+            <p class="mt-8 text-base leading-6 text-center text-gray-400">
+              © 2024 AlphaTech Insights, Inc. All rights reserved.
+            </p>
           </div>
         </section>
-
       </main>
     </div>
   );
