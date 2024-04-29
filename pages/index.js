@@ -6,7 +6,7 @@ import {
   AiFillFacebook,
   AiFillGithub,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsList } from "react-icons/bs";
 import { useState } from "react";
 import profile from "../public/profile-picture.jpg";
 import code from "../public/code.png";
@@ -30,6 +30,11 @@ import alphalogo from "../public/alpha1a.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  // Function to toggle the menu visibility
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -52,28 +57,58 @@ export default function Home() {
                 alt="AlphaTech Insights Logo"
               />
             </div>
-            <div className="flex items-center">
-              <div class="px-5 py-2">
-                <a href="#about" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+            <div className={`md:hidden ${showMenu ? 'block' : 'hidden'}`}> {/* Show/hide menu on smaller screens */}
+              <div className="flex flex-col md:flex-row md:items-center">
+                <div className="px-5 py-2">
+                  <a href="#about" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                  </a>
+                </div>
+                <div className="px-5 py-2">
+                  <a href="#services" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Services
+                  </a>
+                </div>
+                <div className="px-5 py-2">
+                  <a href="#portfolio" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Portfolio
+                  </a>
+                </div>
+                <div className="px-5 py-2">
+                  <a href="#contact" className="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="hidden md:flex items-center"> {/* Show regular menu on medium and larger screens */}
+              <div className="px-5 py-2">
+                <a href="#about" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   About
                 </a>
               </div>
-              <div class="px-5 py-2">
-                <a href="#services" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+              <div className="px-5 py-2">
+                <a href="#services" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   Services
                 </a>
               </div>
-              <div class="px-5 py-2">
-                <a href="#portfolio" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+              <div className="px-5 py-2">
+                <a href="#portfolio" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   Portfolio
                 </a>
               </div>
-              <div class="px-5 py-2">
-                <a href="#contact" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+              <div className="px-5 py-2">
+                <a href="#contact" className="text-base leading-6 text-gray-500 hover:text-gray-900">
                   Contact
                 </a>
               </div>
             </div>
+
+            {/* Hamburger menu icon */}
+            <div className="md:hidden">
+              <BsList onClick={toggleMenu} className="cursor-pointer text-lg md:text-xl" />
+            </div>
+
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -81,14 +116,14 @@ export default function Home() {
                   className="cursor-pointer text-lg md:text-xl"
                 />
               </li>
-              <li>
+              {/**  <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-slate-700 text-white px-3 md:px-4 py-1 md:py-2 border-none rounded-md ml-4 md:ml-8"
                   href="https://www.maxino.dev/games"
                 >
                   Game
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div id="about" className="text-center p-4 md:p-6 py-6 md:py-10 drop-shadow-md">
