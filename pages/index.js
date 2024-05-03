@@ -146,7 +146,7 @@ export default function Home() {
           <div id="about" className="text-center p-4 md:p-6 py-6 md:py-10 drop-shadow-md">
             <h2 className="text-3xl md:text-5xl py-2 text-slate-700 font-extrabold dark:text-white">
               Kelvin
-              <span className="text-sky-500">Rimui</span>
+              <span className="text-sky-500 font-extrabold"> Rimui</span>
             </h2>
             <h3 className="text-xl md:text-2xl py-2 dark:text-white">
               IT Consultant.
