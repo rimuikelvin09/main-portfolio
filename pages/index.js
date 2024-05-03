@@ -207,11 +207,11 @@ export default function Home() {
                 expertly crafted web solutions, where every line of code tells a story of mastery.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Solutions</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
+              <ul className="px-1 list-none text-sm md:text-base text-gray-800 dark:text-gray-800">
                 <li className=" py-1">✅ E-Commerce</li>
-                <li className="py-1">Portfolio's</li>
-                <li className=" py-1">Corporate websites</li>
-                <li className="py-1">Blog websites</li>
+                <li className="py-1">✅ Portfolio's</li>
+                <li className=" py-1">✅ Corporate websites</li>
+                <li className="py-1">✅ Blog websites</li>
               </ul>
 
             </div>
@@ -225,11 +225,11 @@ export default function Home() {
                 clicks into conversions and engagement into lasting relationships.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Forte</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
-                <li className="py-1">Digital Marketing Strategy</li>
-                <li className="py-1">Social Media Management</li>
-                <li className="py-1">Graphic Design</li>
-                <li className="py-1">Photography & Videography</li>
+              <ul className="px-1 list-none text-sm md:text-base text-gray-800 dark:text-gray-800">
+                <li className="py-1">✅ Digital Marketing Strategy</li>
+                <li className="py-1">✅ Social Media Management</li>
+                <li className="py-1">✅ Graphic Design</li>
+                <li className="py-1">✅ Photography & Videography</li>
               </ul>
             </div>
             <div className="text-left shadow-xl leading-8 hover:shadow-2xl p-4 md:p-10 rounded-xl my-4 md:my-10 dark:bg-slate-200">
@@ -242,11 +242,11 @@ export default function Home() {
                 bespoke solutions, to propel your business forward with precision.
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Solutions</h4>
-              <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
-                <li className="py-1">Software Development</li>
-                <li className="py-1">Mobile App development</li>
-                <li className="py-1">ERP & CRM systems</li>
-                <li className="py-1">Fintech solutions</li>
+              <ul className="px-1 list-none text-sm md:text-base text-gray-800 dark:text-gray-800">
+                <li className="py-1">✅ Software Development</li>
+                <li className="py-1">✅ Mobile App development</li>
+                <li className="py-1">✅ ERP & CRM systems</li>
+                <li className="py-1">✅ Fintech solutions</li>
               </ul>
             </div>
           </div>
