@@ -6,7 +6,7 @@ import {
   AiFillFacebook,
   AiFillGithub,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill, BsList } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsList, BsX } from "react-icons/bs";
 import { useState } from "react";
 import profile from "../public/profile-picture.jpg";
 import code from "../public/code.png";
@@ -31,9 +31,26 @@ import alphalogo from "../public/alpha1a.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [fullScreenMenu, setFullScreenMenu] = useState(false); // State to track full-screen menu
+
   // Function to toggle the menu visibility
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    if (!fullScreenMenu) {
+      setShowMenu(!showMenu);
+    }
+  };
+
+  // Function to handle menu item click and close full-screen menu
+  const handleMenuItemClick = () => {
+    if (fullScreenMenu) {
+      toggleMenu();
+      setFullScreenMenu(false);
+    }
+  };
+
+  // Function to toggle full-screen menu
+  const toggleFullScreenMenu = () => {
+    setFullScreenMenu(!fullScreenMenu);
   };
 
   return (
@@ -191,7 +208,7 @@ export default function Home() {
               </p>
               <h4 className="py-2 md:py-4 font-bold text-sky-600">Our Solutions</h4>
               <ul className="px-4 list-disc text-sm md:text-base text-gray-800 dark:text-gray-800">
-                <li className=" py-1">E-Commerce</li>
+                <li className=" py-1">✅ E-Commerce</li>
                 <li className="py-1">Portfolio's</li>
                 <li className=" py-1">Corporate websites</li>
                 <li className="py-1">Blog websites</li>
