@@ -440,7 +440,7 @@ export default function Home() {
               </a>
             </div>
             <p class="mt-8 text-base leading-6 text-center text-gray-400">
-              © 2024 AlphaTech Insights, Inc. All rights reserved.
+              Made with ❤️ © 2024 AlphaTech Insights, Inc. All rights reserved.
             </p>
           </div>
         </section>
