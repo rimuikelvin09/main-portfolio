@@ -155,7 +155,7 @@ export default function Home() {
               <Image src={profile} alt="" layout="fill" objectFit="cover" />
             </div>
             <p className=" text-md md:text-md py-3 md:py-5 leading-7 md:leading-8 text-gray-800 dark:text-gray-200 max-w-md md:max-w-3xl mx-auto">
-              My team specializes in seamlessly integrating business operations with cutting-edge IT solutions.
+              My team specializes in seamlessly integrating business operations with the relevant IT solutions.
               With a focus on websites, CRM systems, hardware implementation, and a diverse background spanning various industries,
               we are your trusted partner in optimizing your technological infrastructure for maximum efficiency and growth.
             </p>
@@ -190,7 +190,7 @@ export default function Home() {
               <span className="text-sky-600"> Associations</span>,
               <span className="text-sky-600"> Corporates</span> &
               <span className="text-sky-600"> SME's </span>.
-              We've also collaborated with talanted people to create digital products
+              We've also collaborated with talented people to create digital products
               for both business and consumer use.
             </p>
           </div>
