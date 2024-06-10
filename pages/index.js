@@ -25,7 +25,8 @@ import sb4u from "../public/SB4U-LOGO-1.png";
 import compact from "../public/compact.png";
 import bbs from "../public/Benchmark.png";
 import alphalogo from "../public/alpha1a.png";
-
+import kroa from "../public/kroa.png";
+import scredit from "../public/smartcredit.png";
 
 
 export default function Home() {
@@ -318,6 +319,16 @@ export default function Home() {
               </a>
             </div>
             <div className="size-36">
+              <a href="https://smartcredit.co.ke/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={scredit}
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="size-36">
               <a href="https://orionfastcash.co.ke/" target="_blank" rel="noopener noreferrer">
                 <Image
                   className="object-cover"
@@ -327,6 +338,17 @@ export default function Home() {
                 />
               </a>
             </div>
+            <div className="size-20">
+              <a href="https://drillers.co.ke/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="object-cover"
+                  layout="responsive"
+                  src={kroa}
+                  alt=""
+                />
+              </a>
+            </div>
+
 
           </div>
 
